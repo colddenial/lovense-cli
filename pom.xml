@@ -14,9 +14,9 @@
   </properties>
   <repositories>
     <repository>
-      <id>local.repo</id>
-      <name>local-repo</name>
-      <url>file:/home/xitiomet/.m2/repository/</url>
+      <id>github-colddenial</id>
+      <name>colddenial</name>
+      <url>https://maven.pkg.github.com/colddenial/lovense-lan-api</url>
     </repository>
   </repositories>
   <dependencies>

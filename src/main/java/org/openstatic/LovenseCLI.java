@@ -57,7 +57,7 @@ public class LovenseCLI extends BasicWindow implements LovenseConnectListener
         {
             if (this.commandLineOptions.hasOption("d"))
                 LovenseConnect.setDebug(true);
-            if (this.commandLineOptions.hasOption("h") && this.commandLineOptions.hasOption("p"))
+            if (this.commandLineOptions.hasOption("h"))
             {
                 int port = Integer.valueOf(this.commandLineOptions.getOptionValue('p',"34568")).intValue();
                 String host = this.commandLineOptions.getOptionValue('h',"127.0.0.1");
@@ -76,7 +76,7 @@ public class LovenseCLI extends BasicWindow implements LovenseConnectListener
         LovenseConnect.addLovenseConnectListener(this);
         this.mainThread.start();
         this.mainPanel.addComponent(this.toyPanel);
-        this.searchingLabel = new Label("Please Wait... Searching for toys");
+        this.searchingLabel = new Label("Please Wait... Searching for toys ");
         this.exitButton = new Button("Exit", new Runnable() {
                 @Override
                 public void run() {
